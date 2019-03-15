@@ -35,7 +35,7 @@
 	font-weight: bold;
 	color: rgb(255,0,10);
 }
-#serialkillerfont {
+#sfont {
 	font-family: "Times New Roman", serif;
 	font-weight: bold;
 	color: green;
@@ -134,7 +134,7 @@ a:hover{
 
 //from here on, these are all styles to get the modal (a worse version of a lightbox) working
 .myImage {
-  border-radius: 3px;
+  border-radius: 2px;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -160,6 +160,15 @@ a:hover{
   max-width: 700px;
 }
 
+.close {
+  position: absolute;
+  top: 5px;
+  right: 50px;
+  color: #0c3396;
+  font-size: 80px;
+  transition: 0.2s;
+}
+
 .caption {
   margin: auto;
   display: block;
@@ -169,15 +178,6 @@ a:hover{
   color: #0c3396;
   padding: 10px 0;
   height: 20px;
-}
-
-.close {
-  position: absolute;
-  top: 5px;
-  right: 50px;
-  color: #0c3396;
-  font-size: 80px;
-  transition: 0.2s;
 }
 
 .close:hover,
