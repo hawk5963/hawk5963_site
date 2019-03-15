@@ -25,7 +25,6 @@
 		<script>
 		var xmlhttp = new XMLHttpRequest();
 		var url = "https://raw.githubusercontent.com/hawk5963/hawk5963.github.io/master/skills.json";
-
 		xmlhttp.onreadystatechange = function() {
 		    if (this.readyState == 4 && this.status == 200) {
 		        var arr = JSON.stringify(this.responseText);
@@ -34,7 +33,6 @@
 		};
 		xmlhttp.open("GET", url, true);
 		xmlhttp.send();
-
 		function myFunction(arr) {
 			var out = "";
 			var i;
@@ -53,7 +51,6 @@
 				out = out.substring(out.indexOf("~")+1);
 				l.push(addme);
 				fixme = fixme + addme + '\n';
-
 			}
 			out = fixme;
 			document.getElementById("skills").innerHTML = out;
